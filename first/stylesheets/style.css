@@ -1,0 +1,109 @@
+:root {
+  --dracula-orchid: #2d3436;
+  --belize-hole: #2980b9;
+  --alizarin: #e74c3c;
+  --carrot: #e67e22;
+  --sun-flower: #f1c40f;
+  --emerald: #2ecc71;
+  --peter-river: #3498db;
+  --indigo: #3f00ff;
+  --amethyst: #9b59b6;
+}
+
+body {
+  background-color: var(--dracula-orchid);
+}
+
+.title {
+  font-family: 'Underdog', cursive;
+  text-align: center;
+}
+
+.card {
+  /* extend .card class from Bootstrap */
+  background-color: var(--dracula-orchid);
+  color: white;
+  border-color: white;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Abel', sans-serif;
+  font-weight: 1000;
+  /* text-align: center; */
+}
+
+.card-text {
+}
+
+.image-article {
+  width: 100%;
+}
+
+.text-red {
+  background-color: var(--alizarin);
+}
+
+.text-orange {
+  background-color: var(--carrot);
+}
+
+.text-yellow {
+  background-color: var(--sun-flower);
+}
+
+.text-green {
+  background-color: var(--emerald);
+}
+
+.text-blue {
+  background-color: var(--peter-river);
+}
+
+.text-indigo {
+  background-color: var(--indigo);
+}
+.text-violet {
+  background-color: var(--amethyst);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  h1 {
+    color: red;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    color: green;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    color: blue;
+  }
+
+  .quarter {
+    flex: 0 0 25%;
+  }
+  .half {
+    flex: 0 0 50%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    color: yellow;
+  }
+}
+
+.footer {
+  color: white;
+  background-color: var(--belize-hole);
+  text-align: center;
+}
