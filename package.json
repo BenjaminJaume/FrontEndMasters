@@ -1,0 +1,23 @@
+{
+  "name": "FrontEndMasters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bubble_sort.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminJaume/fem-4semesters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminJaume/fem-4semesters/issues"
+  },
+  "homepage": "https://github.com/BenjaminJaume/fem-4semesters#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
