@@ -207,8 +207,8 @@ function loadBooks(bookshelf) {
 }
 
 var BOOK_API = 'https://some.url/api';
-var instanceBookshelf = new Bookshelf();
-loadBooks(instanceBookshelf); // ***********************
+var firstBookshelf = new Bookshelf();
+loadBooks(firstBookshelf); // ***********************
 // NOTE: don't modify this function at all
 
 function fakeAjax(url, cb) {

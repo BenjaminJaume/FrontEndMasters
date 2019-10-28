@@ -32,8 +32,8 @@ function loadBooks(bookshelf) {
 
 var BOOK_API = 'https://some.url/api';
 
-var instanceBookshelf = new Bookshelf();
-loadBooks(instanceBookshelf);
+var firstBookshelf = new Bookshelf();
+loadBooks(firstBookshelf);
 
 // ***********************
 
