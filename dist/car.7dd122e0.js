@@ -117,105 +117,39 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"2-starting-javascript/three-pillars/ex.js":[function(require,module,exports) {
+})({"2-starting-javascript/exercise/car.js":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Bookshelf =
+var Car =
 /*#__PURE__*/
 function () {
-  function Bookshelf() {
-    _classCallCheck(this, Bookshelf);
+  function Car(key) {
+    _classCallCheck(this, Car);
 
-    this.favoriteBooks = [];
-  } // TODO: define methods `addFavoriteBook(..)`
-  // and `printFavoriteBooks()`
+    this.passengers = 0;
+    this.key = key;
+  }
 
-
-  _createClass(Bookshelf, [{
-    key: "addFavoriteBook",
-    value: function addFavoriteBook(bookName) {
-      if (!bookName.includes('Great')) {
-        this.favoriteBooks.push(bookName);
-      }
-    }
-  }, {
-    key: "printFavoriteBooks",
-    value: function printFavoriteBooks() {
-      console.log("Favorite Books: ".concat(String(this.favoriteBooks.length)));
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
-
-      try {
-        for (var _iterator = this.favoriteBooks[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var bookName = _step.value;
-          console.log(bookName);
-        }
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-      } finally {
-        try {
-          if (!_iteratorNormalCompletion && _iterator.return != null) {
-            _iterator.return();
-          }
-        } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
-          }
-        }
+  _createClass(Car, [{
+    key: "startEngine",
+    value: function startEngine(key) {
+      if (Number(key) == 1234) {
+        console.log('Good to go');
+      } else {
+        console.log('Who is in the car?');
       }
     }
   }]);
 
-  return Bookshelf;
+  return Car;
 }();
 
-function loadBooks(bookshelf) {
-  // TODO: call fakeAjax( .. );
-  return fakeAjax(BOOK_API, function (booksArray) {
-    var _iteratorNormalCompletion2 = true;
-    var _didIteratorError2 = false;
-    var _iteratorError2 = undefined;
-
-    try {
-      for (var _iterator2 = booksArray[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-        var book = _step2.value;
-        bookshelf.addFavoriteBook(book);
-      }
-    } catch (err) {
-      _didIteratorError2 = true;
-      _iteratorError2 = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
-          _iterator2.return();
-        }
-      } finally {
-        if (_didIteratorError2) {
-          throw _iteratorError2;
-        }
-      }
-    }
-
-    bookshelf.printFavoriteBooks();
-  });
-}
-
-var BOOK_API = 'https://some.url/api';
-var firstBookshelf = new Bookshelf();
-loadBooks(firstBookshelf); // ***********************
-// NOTE: don't modify this function at all
-
-function fakeAjax(url, cb) {
-  setTimeout(function fakeLoadingDelay() {
-    cb(['A Song of Ice and Fire', 'The Great Gatsby', 'Crime & Punishment', 'Great Expectations', "You Don't Know JS"]);
-  }, 500);
-}
+var mercedes = new Car(1234);
+mercedes.startEngine(1234);
 },{}],"../../../Users/Benjamin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -420,5 +354,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../Users/Benjamin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","2-starting-javascript/three-pillars/ex.js"], null)
-//# sourceMappingURL=/ex.22032b58.js.map
+},{}]},{},["../../../Users/Benjamin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","2-starting-javascript/exercise/car.js"], null)
+//# sourceMappingURL=/car.7dd122e0.js.map
