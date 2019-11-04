@@ -4,40 +4,81 @@ html {
   box-sizing: border-box;
 }
 /* inherit border-box on all elements in the universe and before and after
- */
-*, 
-*:before, 
+   */
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
 
 body {
-	font-family: Arial, Geneva, sans-serif;
+  font-family: Arial, Geneva, sans-serif;
 }
 a {
-	color: #2772B0;
+  color: #2772b0;
 }
 .wrapper {
-	width: 97%;
-	max-width: 1200px;
-	margin: 0 auto;
-	float: none;
-	background-color: #fff;
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  background-color: #fff;
 }
 
 div img {
-	width: 100%;
-	max-width: 225px; 
+  width: 100%;
+  max-width: 250px;
 }
 
 /* grid system -- mobile first! */
 
-
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
-
+@media only screen and (min-width: 480px) {
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+  .row {
+    clear: both;
+  }
 
+  [class*='col-'] {
+    margin-left: 4%;
+  }
+
+  .col-4 {
+    background-color: #ffc;
+
+    width: 20%;
+    float: left;
+    margin-left: 4%;
+  }
+
+  .col-2 {
+    background-color: #fcf;
+
+    float: left;
+    width: 44%;
+    margin-left: 4%;
+  }
+
+  .col-1-4 {
+    background-color: #ffc;
+
+    float: left;
+    width: 20%;
+  }
+
+  .col-3-4 {
+    background-color: #cff;
+
+    float: left;
+    width: 68%;
+  }
+
+  .col-1 {
+    background-color: #ccf;
+
+    float: left;
+    width: 92%;
+  }
 }
