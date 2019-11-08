@@ -38,11 +38,13 @@ div img {
 }
 
 .col-1,
-.col-1-4 {
+.col-1-4,
+.col-5-1 {
   background-color: #ffc;
 }
 
-.col-2 {
+.col-2,
+.col-5-2 {
   background-color: #ccf;
 }
 
@@ -54,26 +56,33 @@ div img {
   background-color: #cff;
 }
 
+.col-1,
+.col-2,
+.col-1-4,
+.col-3,
+.col-4,
+.col-5-1,
+.col-5-2 {
+  flex: 0 0 95%;
+}
+
 .first {
-  order: 1;
+  order: 3;
 }
 
 .second {
   order: 2;
 }
 
-.col-1,
-.col-2,
-.col-1-4,
-.col-3,
-.col-4 {
-  flex: 0 0 95%;
+.third {
+  order: 1;
 }
 
 /* Mobile Landscape / Tablet Screen Sizes */
 @media only screen and (min-width: 480px) {
   .col-1,
-  .col-2 {
+  .col-2,
+  .col-5-1 {
     flex: 0 0 45%;
   }
 
@@ -90,15 +99,21 @@ div img {
   .second {
     order: 1;
   }
+
+  .third {
+    order: 3;
+  }
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
   .col-1,
-  .col-1-4 {
+  .col-1-4,
+  .col-5-1 {
     flex: 0 0 20%;
   }
 
-  .col-2 {
+  .col-2,
+  .col-5-2 {
     flex: 0 0 45%;
   }
 
@@ -108,5 +123,17 @@ div img {
 
   .col-4 {
     flex: 0 0 95%;
+  }
+
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .third {
+    order: 3;
   }
 }
