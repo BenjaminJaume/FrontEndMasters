@@ -27,7 +27,7 @@ h6 {
 .wrapper {
   margin: 0 auto;
   float: none;
-  width: 97%;
+  width: 100%;
   max-width: 1200px;
 }
 
@@ -86,9 +86,30 @@ nav li:nth-child(odd) {
   flex-flow: row wrap;
 }
 
+/* Navigation bar */
 .col-2-1 {
   flex: 0 0 50%;
   padding: 10px 20px;
+}
+
+.col-3 {
+  padding: 0 1em;
+}
+
+.col-1-4 {
+  padding: 3em 3em;
+}
+
+.sidebar-primary {
+  margin-bottom: 2em;
+}
+
+.sidebar-secondary {
+  margin-top: 2em;
+}
+
+.floatright {
+  float: none;
 }
 
 div.row {
@@ -139,7 +160,7 @@ blockquote cite {
   display: block;
 }
 footer {
-  background-color: #00cdd1;
+  /* background-color: #00cdd1; */
   color: white;
   clear: both;
   margin: 0 0.5em 3em 0.5em;
@@ -215,20 +236,34 @@ footer a {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    /* flex: 0 0 100%;
-    padding: 0 2em; */
+    padding: 0;
   }
 
   .sidebar-primary {
     flex: 0 0 40%;
-    margin-right: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 0;
   }
 
   .sidebar-secondary {
     flex: 0 0 40%;
-    margin-left: 2em;
+    margin-left: 0.5em;
+    margin-top: 0;
   }
 }
+
+/* Apply to Mobile Landscape / Tablet and above */
+@media (min-width: 550px) {
+  .floatright {
+    float: right;
+    margin-left: 2em;
+  }
+
+  .floatright::after {
+    clear: both;
+  }
+}
+
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) {
   .wrapper {
@@ -277,19 +312,21 @@ footer a {
   } */
 
   /* Navigation bar */
+  .row {
+    justify-content: center;
+  }
   .col-2-1 {
     flex: 0 0 auto;
   }
 
   .col-3 {
-    flex: 0 0 75%;
-    padding-right: 1em;
-    padding-left: 2em;
+    flex: 0 0 70%;
+    padding: 0 1em 3em 2em;
   }
 
   .col-1-4 {
     flex: 0 0 25%;
-    padding: 3em 2em 0 1em;
+    padding: 3em 1em 3em 1em;
   }
 
   .sidebar-primary {
