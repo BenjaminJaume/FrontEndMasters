@@ -23,32 +23,46 @@ h6 {
   font-weight: normal;
   color: #c80060;
 }
+
 .wrapper {
+  width: 100%;
   margin: 0 auto;
+  float: none;
 }
+
+header {
+  text-align: center;
+}
+
 article img {
   border-radius: 10px;
   width: 100%;
   max-width: 250px;
 }
+
 nav {
   background: url(../img/scallop.png) repeat-x;
 }
+
 nav ul {
   list-style-type: none;
   background-color: #e6bf98;
-  padding: 0.75em;
+  padding-inline-start: 0;
   margin: 12px 0 0 0;
   border-bottom: 3px solid #cc8850;
   overflow: auto;
+  width: 100%;
+}
+
+nav li {
+  display: inline;
 }
 
 nav a {
   color: #c80060;
   text-decoration: none;
-  display: block;
-  padding-left: 3.333333%;
 }
+
 nav a:hover {
   color: #00c4c7;
 }
@@ -68,21 +82,20 @@ nav li:nth-child(odd) {
 
 .row {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .col-2-1 {
-  width: 100%;
+  flex: 0 0 50%;
+  padding: 10px 20px;
 }
 
-.row:before,
+/* .row:before,
 .row:after {
   content: '';
   display: table;
   clear: both;
-}
+} */
 
 div.row {
   background-color: #fff6e0;
@@ -90,14 +103,14 @@ div.row {
   border-bottom-right-radius: 10px;
   padding: 1em;
 }
-.floatleft {
+/* .floatleft {
   float: left;
   margin: 0 1em 1em 0;
 }
 .floatright {
   float: right;
   margin: 0 0 1em 1em;
-}
+} */
 [class*='sidebar'] {
   border: 1px solid #00c4c7;
   border-radius: 10px;
@@ -155,34 +168,34 @@ footer a {
   text-decoration: none;
 }
 
-[class*='‘col’'] {
+/* [class*='‘col’'] {
   margin-left: 0;
-}
-.col-1,
+} */
+/* .col-1,
 .col-2,
 .col-3,
 .col-4,
 .col-1-2,
 .col-1-4 {
   width: 96.66666%;
-}
+} */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 550px) and (max-width: 849px) {
-  .wrapper {
+  /* .wrapper {
     width: 97%;
     max-width: 767px;
     float: none;
-  }
-  .col-1,
+  } */
+  /* .col-1,
   .col-2,
   .col-1-2,
   .col-3,
   .col-4,
   .col-1-4 {
     width: 96.66666%;
-  }
-  div.row {
+  } */
+  /* div.row {
     padding: 0 2em;
   }
   aside[class*='sidebar'] {
@@ -201,11 +214,19 @@ footer a {
   }
   nav a {
     padding: 0em 1em 0em 1em;
+  } */
+
+  .wrapper {
+    width: 98%;
+  }
+
+  .col-2-1 {
+    flex: 0 0 auto;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 850px) {
-  .wrapper {
+  /* .wrapper {
     width: 97%;
     max-width: 1200px;
     float: none;
@@ -250,5 +271,5 @@ footer a {
   }
   nav a {
     padding: 0em 1em 0em 1em;
-  }
+  } */
 }

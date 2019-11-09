@@ -1,0 +1,39 @@
+nav {
+  background: url(../img/scallop.png) repeat-x;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #e6bf98;
+  padding: 0.75em;
+  border-bottom: 3px solid #cc8850;
+  overflow: auto;
+  width: 100%;
+}
+
+nav li {
+  /* display: inline; */
+}
+
+nav a {
+  color: #c80060;
+  text-decoration: none;
+  display: block;
+  padding-left: 3.333333%;
+}
+
+nav a:hover {
+  color: #00c4c7;
+}
+
+/* --------------------------------------- */
+
+/* .row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.col-2-1 {
+  flex: 0 0 50%;
+} */
