@@ -68,19 +68,6 @@ nav a:hover {
   color: #00c4c7;
 }
 
-/* splits nav into 2 columns
-http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
-/* nav li:nth-child(even) {
-  width: 50%;
-  float: right;
-  padding: 0.5em;
-}
-nav li:nth-child(odd) {
-  width: 50%;
-  float: left;
-  padding: 0.5em;
-} */
-
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -116,14 +103,11 @@ div.row {
   background-color: #fff6e0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  /* padding: 1em; */
 }
 
 [class*='sidebar'] {
   border: 1px solid #00c4c7;
   border-radius: 10px;
-  /* margin-bottom: 1em;
-  margin-top: 2.5em; */
 }
 [class*='sidebar'] h3 {
   margin: 0;
@@ -160,7 +144,6 @@ blockquote cite {
   display: block;
 }
 footer {
-  /* background-color: #00cdd1; */
   color: white;
   clear: both;
   margin: 0 0.5em 3em 0.5em;
@@ -176,18 +159,6 @@ footer a {
   text-decoration: none;
 }
 
-/* [class*='‘col’'] {
-  margin-left: 0;
-} */
-/* .col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-1-2,
-.col-1-4 {
-  width: 96.66666%;
-} */
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 550px) and (max-width: 849px) {
   .wrapper {
@@ -195,30 +166,10 @@ footer a {
     max-width: 767px;
     float: none;
   }
-  /* .col-1,
-  .col-2,
-  .col-1-2,
-  .col-3,
-  .col-4,
-  .col-1-4 {
-    width: 96.66666%;
-  } */
+
   div.row {
     padding: 0 2em;
   }
-  /* 
-
-  nav li,
-  nav li:nth-child(even),
-  nav li:nth-child(odd) {
-    display: inline-block;
-    float: none;
-    width: auto;
-    padding: 0;
-  }
-  nav a {
-    padding: 0em 1em 0em 1em;
-  } */
 
   /* Navigation bar */
   .col-2-1 {
@@ -272,25 +223,6 @@ footer a {
     float: none;
   }
 
-  /* [class*='col-'] {
-    float: left;
-    margin-left: 3.33333%;
-    min-height: 1px;
-  }
-  .col-1,
-  .col-1-2,
-  .col-1-4 {
-    width: 20.83333%;
-  }
-  .col-2 {
-    width: 44.99999%;
-  }
-  .col-3 {
-    width: 69.16665%;
-  }
-  .col-4 {
-    width: 96.66666%;
-  } */
   h2 {
     font-size: 3em;
     border-bottom: 2px dotted #c80060;
@@ -298,18 +230,6 @@ footer a {
   h3 {
     font-size: 2em;
   }
-
-  /* nav li,
-  nav li:nth-child(even),
-  nav li:nth-child(odd) {
-    display: inline-block;
-    float: none;
-    width: auto;
-    padding: 0;
-  }
-  nav a {
-    padding: 0em 1em 0em 1em;
-  } */
 
   /* Navigation bar */
   .row {
