@@ -12,7 +12,6 @@ body {
 ul {
   margin: 0;
   padding: 0;
-  max-width: 1200px;
   list-style-type: none;
 
   display: flex;
@@ -22,33 +21,8 @@ ul {
 
 img {
   width: 100%;
-  /* height: auto; */
-}
-
-figure {
-  /* display: block; */
 }
 
 li {
-  /* border: 3px solid black; */
-  -ms-flex: 100%; /* IE10 */
-  flex: 0 0 100%;
-  max-width: 100%;
-  /* padding: 0 4px; */
-}
-
-@media (min-width: 550px) {
-  li {
-    -ms-flex: 50%; /* IE10 */
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media (min-width: 850px) {
-  li {
-    -ms-flex: 33.33%; /* IE10 */
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-  }
+  flex: auto; 
 }
