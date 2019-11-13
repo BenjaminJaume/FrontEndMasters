@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Cabin', Arial, Geneva, sans-serif;
+  font-family: "Cabin", Arial, Geneva, sans-serif;
   background-image: url(../img/clouds.png);
   margin: 0px;
   padding: 0px;
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Niconne', cursive;
+  font-family: "Niconne", cursive;
   font-weight: normal;
   color: #c80060;
 }
@@ -105,11 +105,11 @@ div.row {
   border-bottom-right-radius: 10px;
 }
 
-[class*='sidebar'] {
+[class*="sidebar"] {
   border: 1px solid #00c4c7;
   border-radius: 10px;
 }
-[class*='sidebar'] h3 {
+[class*="sidebar"] h3 {
   margin: 0;
   color: white;
   background-color: #00c4c7;
@@ -117,7 +117,7 @@ div.row {
   border-top-right-radius: 10px;
   padding-left: 0.5em;
 }
-[class*='sidebar'] img {
+[class*="sidebar"] img {
   border-radius: 0px 0px 10px 10px;
   width: 100%;
   max-width: 250px;
