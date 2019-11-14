@@ -160,9 +160,11 @@ footer a {
   flex-direction: row-reverse;
 }
 
-/* ⬆ Classes already there   ⬆
-  ----------------------------
-   ⬇     Custom classes      ⬇ */
+/*
+     ⬆ Classes already there   ⬆
+     ----------------------------
+     ⬇     Custom classes      ⬇
+  */
 
 .merilee {
   max-width: 175px;
@@ -184,6 +186,21 @@ footer a {
 
 .gallery li {
   flex: 0 0 100%;
+}
+
+.button {
+  background-color: #c80060;
+  color: white;
+  padding: 0.3em 1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  border: 2px solid #c80060;
+}
+.button:hover {
+  color: #c80060;
+  background-color: white;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -225,9 +242,11 @@ footer a {
     margin-right: 4%;
   }
 
-  /* ⬆ Classes already there   ⬆
+  /*
+     ⬆ Classes already there   ⬆
      ----------------------------
-     ⬇     Custom classes      ⬇ */
+     ⬇     Custom classes      ⬇
+  */
 
   .merilee {
     max-width: 250px;
@@ -305,9 +324,11 @@ footer a {
     order: 4;
   }
 
-  /* ⬆ Classes already there   ⬆
+  /*
+     ⬆ Classes already there   ⬆
      ----------------------------
-     ⬇     Custom classes      ⬇ */
+     ⬇     Custom classes      ⬇
+  */
 
   .merilee {
     max-width: 400px;
@@ -319,6 +340,6 @@ footer a {
 
   .heading {
     background: url(../img/header-1200.jpg);
-    height: 130px;
+    height: 183px;
   }
 }
