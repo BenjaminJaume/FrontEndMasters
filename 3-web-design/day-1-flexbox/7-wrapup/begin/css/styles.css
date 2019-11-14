@@ -79,7 +79,7 @@ div.row {
   margin: 0 0 1em 1em; */
   float: none;
   display: block;
-  margin: 0 auto;
+  margin-bottom: 1em;
 }
 [class*="sidebar"] {
   border: 1px solid #00c4c7;
@@ -207,6 +207,11 @@ footer a {
 
   .merilee {
     max-width: 250px;
+  }
+
+  .floatright {
+    float: right;
+    margin: 0 0 1em 1em;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
