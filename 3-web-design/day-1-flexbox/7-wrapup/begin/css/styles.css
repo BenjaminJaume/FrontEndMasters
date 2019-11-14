@@ -75,8 +75,6 @@ div.row {
   margin: 0 1em 1em 0;
 }
 .floatright {
-  /* float: right;
-  margin: 0 0 1em 1em; */
   float: none;
   display: block;
   margin-bottom: 1em;
@@ -162,8 +160,30 @@ footer a {
   flex-direction: row-reverse;
 }
 
+/* ⬆ Classes already there   ⬆
+  ----------------------------
+   ⬇     Custom classes      ⬇ */
+
 .merilee {
   max-width: 175px;
+}
+
+.gallery {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery li {
+  flex: 0 0 100%;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -205,6 +225,10 @@ footer a {
     margin-right: 4%;
   }
 
+  /* ⬆ Classes already there   ⬆
+     ----------------------------
+     ⬇     Custom classes      ⬇ */
+
   .merilee {
     max-width: 250px;
   }
@@ -212,6 +236,15 @@ footer a {
   .floatright {
     float: right;
     margin: 0 0 1em 1em;
+  }
+
+  .gallery li {
+    flex: 0 0 50%;
+  }
+
+  .heading {
+    background: url(../img/header-850.jpg);
+    height: 130px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -272,7 +305,20 @@ footer a {
     order: 4;
   }
 
+  /* ⬆ Classes already there   ⬆
+     ----------------------------
+     ⬇     Custom classes      ⬇ */
+
   .merilee {
     max-width: 400px;
+  }
+
+  .gallery li {
+    flex: 0 0 33.33%;
+  }
+
+  .heading {
+    background: url(../img/header-1200.jpg);
+    height: 130px;
   }
 }
