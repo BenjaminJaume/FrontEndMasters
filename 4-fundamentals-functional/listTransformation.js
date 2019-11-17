@@ -10,10 +10,21 @@ function createSuspectObj(name) {
 
 var suspects = ["Miss Scarlet", "Colonel Mustard", "Mr. White", "Dr Magenta"];
 
-var suspectsList = [];
+// forEach method
 
-suspects.forEach(suspect => {
-  suspectsList.push(createSuspectObj(suspect));
+// var suspectsList = [];
+// suspects.forEach(suspect => {
+//   suspectsList.push(createSuspectObj(suspect));
+// });
+
+// map method
+
+var suspectsList = suspects.map(suspect => {
+  return createSuspectObj(suspect);
 });
 
-suspectsList[2].speak();
+suspectsList.forEach(suspect => {
+  suspect.speak();
+});
+
+// suspectsList[2].speak();
