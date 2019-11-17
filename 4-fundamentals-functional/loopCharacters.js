@@ -42,12 +42,13 @@ function getColor(suspects) {
   suspects.forEach(character => {
     colors.push(character.color);
   });
+
   colors.forEach(color => {
     console.log(color);
   });
 }
 
-// displayCharacters(game.suspects);
-// findGuilty(game.suspects);
-// displayGuilty(game.suspects);
+displayCharacters(game.suspects);
+findGuilty(game.suspects);
+displayGuilty(game.suspects);
 getColor(game.suspects);
