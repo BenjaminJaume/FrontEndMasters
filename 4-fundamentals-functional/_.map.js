@@ -19,7 +19,7 @@ _.map = function(list, callback) {
     var storage = [];
     // Looping
     for (let i = 0; i < list.length; i++) {
-      // Callback(element) & p it to our array
+      // Callback(element) & put it to our array
       storage.push(callback(list[i], i, list));
     }
     // Return []
