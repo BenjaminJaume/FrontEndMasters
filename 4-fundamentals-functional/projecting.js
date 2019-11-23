@@ -91,12 +91,14 @@ _.map = function(array, callback) {
   return storage;
 };
 
-const presentSuspectsObj = _.filter(videoData, function(suspectObj) {
-  return suspectObj.present;
-});
+const presentSuspectsObj = _.filter(
+  videoData,
+  suspectObj => suspectObj.present
+);
 
-const presentSuspectsList = _.map(presentSuspectsObj, function(suspectObj) {
-  return suspectObj.name;
-});
+const presentSuspectsList = _.map(
+  presentSuspectsObj,
+  suspectObj => suspectObj.name
+);
 
 console.log(presentSuspectsList);
