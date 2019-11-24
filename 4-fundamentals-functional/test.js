@@ -1,7 +1,8 @@
-const arr = function() {
-  const arr = Array.from(arguments);
-  arr.push("at your mother's");
-  return arr.join(" ");
-};
+var increment = n => n + 1;
 
-console.log(arr("was", "it", "in"));
+var square = n => n * n;
+
+var doTheMathDoIDontHaveTo = (n, callback) => callback(n);
+
+console.log(doTheMathDoIDontHaveTo(5, square));
+console.log(doTheMathDoIDontHaveTo(4, increment));
