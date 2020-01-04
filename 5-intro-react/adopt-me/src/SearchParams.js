@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import pet, { ANIMALS } from "@frontendmasters/pet";
 import Results from "./Results";
 import useDropdown from "./useDropdown";
+import ThemeContext from "./ThemeContext";
 
 const SearchParams = () => {
   // These are hooks - all hooks begins with "use"
@@ -10,6 +11,7 @@ const SearchParams = () => {
   const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS); // Custom hook
   const [breed, BreedDropdown, setBreed] = useDropdown("Breed", "", breeds); // Custom hook
   const [pets, setPets] = useState("");
+  const [theme, setTheme] = useContext(ThemeContext);
 
   async function requestPets() {
     const { animals } = await pet.animals({
@@ -51,7 +53,22 @@ const SearchParams = () => {
         </label>
         <AnimalDropdown />
         <BreedDropdown />
-        <button>Submit</button>
+        <label htmlFor="theme">
+          Theme
+          <select
+            name=""
+            id=""
+            value={theme}
+            onChange={event => setTheme(event.target.value)}
+            onBlur={event => setTheme(event.target.value)}
+          >
+            <option value="peru">Peru</option>
+            <option value="yellow">Yellow</option>
+            <option value="pink">Pink</option>
+            <option value="darkgreen">DarkGreen</option>
+          </select>
+        </label>
+        <button style={{ backgroundColor: theme }}>Submit</button>
       </form>
       <Results pets={pets} />
     </div>
