@@ -2,7 +2,7 @@
 
 The title says it all: I gather every exercises from the [Front End Masters](https://frontendmasters.com/) platform on this repo.
 
-The listed courses are the one's I've have finished so far.
+The listed courses are the one's I finished so far.
 
 ## Beginner Front End Dev Course 
 
